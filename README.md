@@ -116,13 +116,13 @@ This project **successfully integrates**:
 ## 📷 Screenshots
 
 ### **Simulink Model Used for Simulation**
-![Simulink Model](Simmod.png)
+![Simulink Model](Sinmod.png)
 
 ### **Control Inputs and 12 State Variables vs. Time**
-![State Variables](sample1.png)
+![State Variables](Sample1.png)
 
 ### **Geocentric Coordinates and NED Positions vs. Time**
-![Geocentric Coordinates](sample2.png)
+![Geocentric Coordinates](Sample2.png)
 
 ### **Visualization of HL-20 Vehicle Simulation**
 ![HL-20 Simulation](HL20.png)
