@@ -55,9 +55,16 @@ The aircraft’s motion was **visualized** using the **NASA HL-20 Model visualiz
 
 ## 🏁 Trim Initialization
 
-The aircraft was initialized in **level flight at 85 m/s**, with predefined **trim values** for stability:
+The aircraft was initialized in **level flight at 85 m/s**, with predefined **trim values** for stability using trim optimization:
 
 ### **State Vector (`X0`)** **[12×1]**
 
 
 X0 = [84.99, 0.00, 1.27, 0.00, 0.00, 0.00, 0.00, 0.015, 0.00, -12000, -1000, -500]
+
+
+
+### **Control Vector (`U0`)** **[6×1]**
+
+
+U0 = [0.0000, -0.1780, 0.0000, 0.0821, 0.0821, 0]
