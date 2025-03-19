@@ -68,3 +68,63 @@ X0 = [84.99, 0.00, 1.27, 0.00, 0.00, 0.00, 0.00, 0.015, 0.00, -12000, -1000, -50
 
 
 U0 = [0.0000, -0.1780, 0.0000, 0.0821, 0.0821, 0]
+
+
+(Aileron, Elevator, Rudder, Throttle 1, Throttle 2, Weight Drop)
+
+---
+
+## 📌 Execution Process
+
+1. **Initialize Aircraft:** Set **trim conditions** for velocity, angles, and controls.
+2. **Assign Variables to Workspace:** `X0` and `U0` are **stored in MATLAB workspace**.
+3. **Start Keyboard Control:** The function **`keyboard_control_live()`** captures **user inputs dynamically**.
+4. **Run Simulink Model:** The **RCAM nonlinear model** is executed **in real-time**.
+5. **Monitor Outputs:** **Visualization and scopes** display aircraft response.
+
+---
+
+## 🔍 Understanding the RCAM Model
+
+The **Research Civil Aircraft Model (RCAM)** is a **nonlinear 6-DOF aircraft dynamics model** used for flight control and stability analysis. The model includes:
+
+- **Aerodynamic Forces & Moments** (Lift, Drag, Side Force)
+- **Control Inputs** (Aileron, Elevator, Rudder, Throttle)
+- **Engine Model** (Thrust forces)
+- **Gravity & Mass Effects**
+- **Navigation Equations** (Converting body velocities to global frame)
+
+The **Simulink model** is modified to **accept 6 inputs instead of 5**, where the additional input **controls mass reduction**.
+
+---
+
+## 📊 Results & Conclusion
+
+This project **successfully integrates**:
+
+✅ **Real-time keyboard-based manual aircraft handling**  
+✅ **Variable mass simulation**, demonstrating mass reduction effects  
+✅ **Advanced visualization** using **MATLAB Aerospace Blockset**  
+
+### 🔮 Future Improvements:
+- **Integrate with X-Plane or FlightGear** for external visualization  
+- **Expand control inputs** (e.g., shift center of gravity, landing gear deployment)  
+- **Implement fuel consumption-based mass reduction over time**  
+
+---
+
+## 📷 Screenshots
+
+### **Simulink Model Used for Simulation**
+![Simulink Model](Simmod.png)
+
+### **Control Inputs and 12 State Variables vs. Time**
+![State Variables](sample1.png)
+
+### **Geocentric Coordinates and NED Positions vs. Time**
+![Geocentric Coordinates](sample2.png)
+
+### **Visualization of HL-20 Vehicle Simulation**
+![HL-20 Simulation](HL20.png)
+
+---
